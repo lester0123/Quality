@@ -10,5 +10,4 @@ function typeWriter() {
     }
 }
 
-// Call the function to start typing
 typeWriter();
