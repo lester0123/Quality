@@ -1,13 +1,39 @@
-const text = "QUALITY CORRUGATED BOX MFG. CORP.";
-let index = 0;
-const speed = 100; // Adjust typing speed here
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutuspointer = document.querySelector('.pointaboutus');
+    const divaboutus = document.querySelector('.sideaboutus');
 
-function typeWriter() {
-    if (index < text.length) {
-        document.getElementById("typewriter").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, speed);
-    }
-}
+    let AboutUsisExpanded = false;
 
-typeWriter();
+    aboutuspointer.addEventListener('click', function() {
+        if (!AboutUsisExpanded) {
+            divaboutus.style.width = '90%';
+            AboutUsisExpanded = true;
+            if(AddressisExpanded = true){
+                divaddress.style.width = '';
+                AddressisExpanded=false;
+            }
+        } else {
+            divaboutus.style.width = '';
+            AboutUsisExpanded = false;
+        }
+    });
+
+
+    const addresspointer = document.querySelector('.pointaddress');
+    const divaddress = document.querySelector('.sideaddress');
+
+    let AddressisExpanded = false;
+    addresspointer.addEventListener('click', function() {
+        if (!AddressisExpanded) {
+            divaddress.style.width = '90%';
+            AddressisExpanded = true;
+            if(AboutUsisExpanded = true){
+                divaboutus.style.width = '';
+                AboutUsisExpanded=false;
+            }
+        } else {
+            divaddress.style.width = '';
+            AddressisExpanded = false;
+        }
+    });
+});

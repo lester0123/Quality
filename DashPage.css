@@ -1,51 +1,140 @@
-.image-container {
-            width: 200px; /* Set a fixed width for all image containers */
-            height: 200px; /* Set a fixed height for all image containers */
-            border-radius: 20px;
-            background-color: rgb(224, 224, 224);
-            margin: 10px; /* Add margin to create space around each image container */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s; /* Smooth transition for zoom effect */
-        }
-        .img-fluid {
-            width: 100%; /* Ensure the image fills the container horizontally */
-            height: 100%; /* Ensure the image fills the container vertically */
-            object-fit: cover; /* Maintain aspect ratio while covering the container */
-            transition: transform 0.3s; /* Smooth transition for zoom effect */
-        }
-        .image-container:hover .img-fluid {
-            transform: scale(1.1); /* Zoom in effect on hover */
-        }
-        .samplelabel {
-            display: flex;
-            justify-content: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 24px; /* Adjust the font size */
-            color: #d34e1e;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px; /* Optional margin below the label */
-        }
-
-        /* Media query for smaller screens */
-        @media only screen and (max-width: 768px) {
-            .containersample {
-                display: flex;
-                justify-content: center;
-            }
-            .containersample .w3-third {
-                width: auto;
-                flex-wrap: wrap;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-
-
-
-.partnername{
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    /* Center the menu list horizontally */
+    align-items: center;
+    /* Align items vertically */
+    gap: 10px;
     font-size: 2vb;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #8E8E8E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .active {
+    color: #3FC38B;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: #3FC38B;
+}
+
+@media (min-width: 992) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .sidenav {
+        display: none;
+    }
+}
+/* Define a class to hide the side nav for screens 992 pixels and below */
+@media (max-width: 992px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+
+@media (min-width: 993px) {
+    .collapse {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-item {
+        margin: 20px;
+    }
+}
+
+.home-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.home-content .compnametext {
+    color: #3FC38B;
+    font-weight: bold;
+    font-size: 3.4vb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.home-content .partnertext {
+    color: #8E8E8E;
+    font-weight: bold;
+    font-size: 2vb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+
+.sideaboutus {
+    border: 7px solid #3FC38B;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 10px;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 1.5vb;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3FC38B;
+    width: 80px; /* Add a default width */
+    transition: width 0.3s ease; 
+}
+
+.sideaddress {
+    border: 7px solid #3FC38B;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg); /* Rotate by 90 degrees clockwise */
+    z-index: 0;
+    border-radius: 20px;
+    padding: 10px;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    font-size: 1.5vb;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3FC38B; 
+    width: 80px; /* Add a default width */
+    transition: width 0.3s ease; 
+}
+.pointaddress{
+    padding: 5px;
+    cursor:pointer;
+    background-color: white;
+    border: 5px solid #3FC38B; 
+    width: 20px;
+    height: 150px; 
+    border-radius:50px;
+}
+.pointaboutus{
+    padding: 5px;
+    cursor:pointer;
+    background-color: white;
+    border: 5px solid #3FC38B; 
+    width: 20px; 
+    height: 150px; 
+    border-radius:50px;
 }
