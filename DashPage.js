@@ -8,8 +8,6 @@ const aboutuspointer = document.querySelector('.pointaboutus');
 const divaboutus = document.querySelector('.sideaboutus');
 let AboutUsisExpanded = false;
 
-aboutuspointer.addEventListener('click', function() {
-});
 function clickaboutus() {
     if (!AboutUsisExpanded) {
         divaboutus.style.width = '90%';
@@ -30,8 +28,6 @@ function clickaboutus() {
 const addresspointer = document.querySelector('.pointaddress');
 const divaddress = document.querySelector('.sideaddress');
 let AddressisExpanded = false;
-addresspointer.addEventListener('click', function() {
-});
 function clickaddress() {
     if (!AddressisExpanded) {
         divaddress.style.width = '90%';
