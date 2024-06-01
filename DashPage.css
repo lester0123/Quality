@@ -96,7 +96,7 @@ color: #8E8E8E;
     top: 50%;
     transform: translateY(-50%) rotate(0deg);
     z-index: 0;
-    background-color: #f0f0f0;
+    background-color:white;
     border-radius: 20px;
     padding: 10px;
     height: 700px;
