@@ -19,6 +19,18 @@
 .nav-link:hover {
     color: #3FC38B;
 }
+.btncontactus{
+    background-color: #3FC38B; 
+    font-weight:600;
+    color: white; 
+    border-radius: 10px; 
+    font-size:17px; 
+    padding:10px;
+}
+.btncontactus:hover{
+background-color: rgb(57, 217, 150);
+color: #8E8E8E;
+}
 
 @media (min-width: 992) {
     .navbar-nav {
@@ -58,11 +70,11 @@
 
 .home-content .compnametext {
     color: #3FC38B;
-    font-weight: bold;
-    font-size: 3.4vb;
+    font-size: 3.7vb;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     text-align: center;
+    font-weight: 900;
 }
 
 .home-content .partnertext {
